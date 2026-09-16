@@ -23,34 +23,41 @@ migrate_working_dir/
 # is commented out by default.
 #.vscode/
 
-# Flutter/Dart/Pub related
+# Flutter app (local only; not published to this repo)
+/lib/
+/android/
+/ios/
+/macos/
+/linux/
+/windows/
+/web/
+/test/
+/assets/
+/pubspec.yaml
+/pubspec.lock
+/analysis_options.yaml
+/.metadata
+/flutter_*.png
+/scripts/form_ios.sh
+/scripts/hot_reload.sh
+
+# Flutter/Dart tooling
 **/doc/api/
-**/ios/Flutter/.last_build_id
 .dart_tool/
+**/.dart_tool/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
 /coverage/
-
-# Symbolication related
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
 
 # Node / deps
 node_modules/
 **/node_modules/
 ios/Pods/
 macos/Pods/
-.dart_tool/
-**/.dart_tool/
 
 # Secrets / Firebase
 .env
