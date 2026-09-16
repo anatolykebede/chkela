@@ -1,0 +1,33 @@
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+.site > main {
+  flex: 1;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.05em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 0.12em;
+  padding-bottom: 0.08em;
+}
+
+.brand-dot {
+  width: 0.28em;
+  height: 0.28em;
+  border-radius: 50%;
+  background: var(--accent-bright);
+  display: inline-block;
+  margin-bottom: 0.12em;
+  box-shadow: 0 0 12px var(--glow);
+  font-style: normal;
+}

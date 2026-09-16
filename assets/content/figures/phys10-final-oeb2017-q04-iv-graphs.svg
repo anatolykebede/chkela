@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="420" viewBox="0 0 520 420">
+  <rect width="520" height="420" fill="#0f1115"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#9aa3ad"/>
+    </marker>
+  </defs>
+  <!-- A: negative slope -->
+  <g transform="translate(40,40)">
+    <text x="0" y="12" fill="#e8eaed" font-size="16" font-family="system-ui,sans-serif" font-weight="700">A.</text>
+    <line x1="50" y1="140" x2="50" y2="20" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="50" y1="140" x2="170" y2="140" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="40" y="18" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">I</text>
+    <text x="175" y="155" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">V</text>
+    <line x1="50" y1="40" x2="160" y2="140" stroke="#6ea8ff" stroke-width="2.5"/>
+  </g>
+  <!-- C: horizontal -->
+  <g transform="translate(280,40)">
+    <text x="0" y="12" fill="#e8eaed" font-size="16" font-family="system-ui,sans-serif" font-weight="700">C.</text>
+    <line x1="50" y1="140" x2="50" y2="20" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="50" y1="140" x2="170" y2="140" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="40" y="18" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">I</text>
+    <text x="175" y="155" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">V</text>
+    <line x1="50" y1="70" x2="160" y2="70" stroke="#6ea8ff" stroke-width="2.5"/>
+  </g>
+  <!-- B: through origin (Ohmic) -->
+  <g transform="translate(40,230)">
+    <text x="0" y="12" fill="#e8eaed" font-size="16" font-family="system-ui,sans-serif" font-weight="700">B.</text>
+    <line x1="50" y1="140" x2="50" y2="20" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="50" y1="140" x2="170" y2="140" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="40" y="18" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">I</text>
+    <text x="175" y="155" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">V</text>
+    <line x1="50" y1="140" x2="160" y2="40" stroke="#7dd3c0" stroke-width="2.5"/>
+  </g>
+  <!-- D: vertical -->
+  <g transform="translate(280,230)">
+    <text x="0" y="12" fill="#e8eaed" font-size="16" font-family="system-ui,sans-serif" font-weight="700">D.</text>
+    <line x1="50" y1="140" x2="50" y2="20" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="50" y1="140" x2="170" y2="140" stroke="#9aa3ad" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="40" y="18" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">I</text>
+    <text x="175" y="155" fill="#e8eaed" font-size="14" font-family="Georgia,serif" font-style="italic">V</text>
+    <line x1="110" y1="140" x2="110" y2="35" stroke="#6ea8ff" stroke-width="2.5"/>
+  </g>
+</svg>

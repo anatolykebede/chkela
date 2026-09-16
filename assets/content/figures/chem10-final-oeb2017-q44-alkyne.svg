@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="200" viewBox="0 0 480 200">
+  <rect width="480" height="200" fill="#0f1115"/>
+  <text x="240" y="28" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Alkyne structure</text>
+  <!-- terminal alkyne zigzag: C1≡C2—C3—C4(Me2)—C5—C6—C7 -->
+  <g stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- triple bond as three parallel short lines from left -->
+    <line x1="40" y1="100" x2="90" y2="100"/>
+    <line x1="40" y1="94" x2="90" y2="94"/>
+    <line x1="40" y1="106" x2="90" y2="106"/>
+    <!-- C2 to C3 down-right -->
+    <line x1="90" y1="100" x2="130" y2="140"/>
+    <!-- C3 to C4 up-right -->
+    <line x1="130" y1="140" x2="180" y2="90"/>
+    <!-- methyls on C4 -->
+    <line x1="180" y1="90" x2="180" y2="40"/>
+    <line x1="180" y1="90" x2="180" y2="140"/>
+    <!-- C4 to C5 -->
+    <line x1="180" y1="90" x2="230" y2="140"/>
+    <!-- C5 to C6 -->
+    <line x1="230" y1="140" x2="280" y2="90"/>
+    <!-- C6 to C7 -->
+    <line x1="280" y1="90" x2="330" y2="140"/>
+  </g>
+  <text x="55" y="80" fill="#6ea8ff" font-size="12" font-family="system-ui,sans-serif">≡</text>
+  <text x="240" y="180" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">4,4-dimethyl chain with terminal triple bond</text>
+</svg>

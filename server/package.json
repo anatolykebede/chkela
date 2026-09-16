@@ -1,0 +1,21 @@
+{
+  "name": "chkela-social-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.mjs",
+    "start": "node src/index.mjs",
+    "migrate": "node src/migrate-json.mjs"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@fastify/helmet": "^13.1.1",
+    "@fastify/rate-limit": "^11.2.0",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.0.0",
+    "firebase-admin": "^14.3.0",
+    "jose": "^6.2.12",
+    "pg": "^8.13.1"
+  }
+}

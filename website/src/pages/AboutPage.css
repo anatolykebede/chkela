@@ -1,0 +1,86 @@
+.about {
+  width: min(720px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 3rem 0 5.5rem;
+}
+
+.about-hero {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--line);
+  animation: rise 0.85s var(--ease) both;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  max-width: 13ch;
+  margin: 0.55rem 0 1.3rem;
+}
+
+.about-lead {
+  color: var(--ink-soft);
+  font-size: 1.12rem;
+  max-width: 48ch;
+  line-height: 1.55;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  padding: 3.25rem 0;
+}
+
+.about-block h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7rem;
+}
+
+.about-block p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.about-block a {
+  color: var(--accent-bright);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(184, 174, 255, 0.35);
+  transition: border-color 0.2s ease;
+}
+
+.about-block a:hover {
+  border-bottom-color: var(--accent-bright);
+}
+
+.about-cta {
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.about-cta h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.15rem);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-bright);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

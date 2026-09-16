@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" fill="#0f1115"/>
+  <text x="240" y="26" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Concentration vs time</text>
+  <line x1="60" y1="270" x2="440" y2="270" stroke="#9aa3ad" stroke-width="2"/>
+  <line x1="60" y1="270" x2="60" y2="40" stroke="#9aa3ad" stroke-width="2"/>
+  <text x="250" y="300" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">Time</text>
+  <text x="22" y="160" fill="#9aa3ad" font-size="11" font-family="system-ui,sans-serif" transform="rotate(-90 22 160)">Concentration</text>
+  <!-- product rising -->
+  <path d="M60,270 C140,260 200,100 280,80 L420,80" fill="none" stroke="#6ea8ff" stroke-width="2.5"/>
+  <text x="300" y="72" fill="#6ea8ff" font-size="14" font-family="system-ui,sans-serif" font-weight="700">a</text>
+  <!-- reactant falling -->
+  <path d="M60,50 C140,60 200,200 280,220 L420,220" fill="none" stroke="#e8a05d" stroke-width="2.5"/>
+  <text x="300" y="240" fill="#e8a05d" font-size="14" font-family="system-ui,sans-serif" font-weight="700">b</text>
+  <!-- vertical at equilibrium -->
+  <line x1="340" y1="50" x2="340" y2="270" stroke="#9aa3ad" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="340" cy="150" r="5" fill="#e85d75"/>
+  <text x="352" y="154" fill="#e85d75" font-size="14" font-family="system-ui,sans-serif" font-weight="700">c</text>
+</svg>

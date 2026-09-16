@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "fb_mtq55tzq",
+      "message": "Test feedback from setup",
+      "phone": "+251911223344",
+      "createdAt": "2026-09-06T18:24:48.662Z",
+      "status": "new"
+    },
+    {
+      "id": "fb_mtq5hf83",
+      "message": "the notes are not working",
+      "phone": "+251947876543",
+      "createdAt": "2026-09-06T18:33:49.395Z",
+      "status": "new"
+    }
+  ]
+}

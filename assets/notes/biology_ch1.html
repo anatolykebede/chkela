@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 9 Biology — Chapter 1 Note: Introduction to Biology</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --purple: #6b5fc2;
+    --purple-dark: #4a3f99;
+    --purple-light: #f1efff;
+    --teal: #0f8a72;
+    --teal-light: #e6f7f1;
+    --amber: #d97706;
+    --amber-light: #fff7e8;
+    --coral: #d8553a;
+    --coral-light: #fdeee8;
+    --ink: #1c1c24;
+    --ink-soft: #4a4a58;
+    --muted: #7a7a8a;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --border: #e6e3f0;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+    padding: 56px 32px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    right: -80px; top: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 7px 16px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+  }
+  header p.subtitle {
+    color: rgba(255,255,255,0.82);
+    font-size: 17px;
+    margin-top: 12px;
+    max-width: 560px;
+  }
+  .source-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 10px;
+  }
+
+  /* ===== STICKY NAV ===== */
+  nav.toc {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  }
+  .toc-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+  }
+  .toc-pill {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 7px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .toc-pill:hover {
+    background: var(--purple-light);
+    color: var(--purple-dark);
+    border-color: var(--purple);
+  }
+
+  /* ===== MAIN ===== */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 32px 100px;
+  }
+
+  /* ===== SECTION ===== */
+  .section {
+    margin-bottom: 56px;
+    scroll-margin-top: 70px;
+  }
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+  .section-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--purple);
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-head h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .section-sub {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .video-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--teal-light);
+    color: var(--teal);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+  }
+
+  p { margin-bottom: 16px; color: var(--ink-soft); }
+  strong { color: var(--ink); font-weight: 600; }
+
+  /* ===== KEY TERM CALLOUT ===== */
+  .key-term {
+    background: var(--purple-light);
+    border-left: 4px solid var(--purple);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  .key-term .label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .key-term .term {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ===== REAL-WORLD EXAMPLE ===== */
+  .example-box {
+    background: var(--amber-light);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 20px 0;
+    display: flex;
+    gap: 14px;
+  }
+  .example-box .icon {
+    flex-shrink: 0;
+    width: 32px; height: 32px;
+    background: var(--amber);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    font-size: 16px;
+  }
+  .example-box .label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--amber);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .example-box p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  /* ===== SUBSECTION ===== */
+  h3.subhead {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 28px 0 12px;
+  }
+
+  /* ===== STYLED LIST ===== */
+  ul.note-list {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+  ul.note-list li {
+    position: relative;
+    padding: 8px 0 8px 28px;
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--border);
+  }
+  ul.note-list li:last-child { border-bottom: none; }
+  ul.note-list li::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 16px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--purple);
+  }
+  ul.note-list li strong { color: var(--ink); }
+
+  /* numbered safety/steps list */
+  ol.step-list {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    counter-reset: stepnum;
+  }
+  ol.step-list li {
+    position: relative;
+    counter-increment: stepnum;
+    padding: 10px 0 10px 40px;
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--border);
+  }
+  ol.step-list li:last-child { border-bottom: none; }
+  ol.step-list li::before {
+    content: counter(stepnum);
+    position: absolute;
+    left: 0; top: 8px;
+    width: 24px; height: 24px;
+    border-radius: 7px;
+    background: var(--teal-light);
+    color: var(--teal);
+    font-size: 12.5px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ===== TOOL GRID ===== */
+  .tool-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 24px;
+  }
+  .tool-card {
+    flex: 1 1 calc(50% - 5px);
+    min-width: 200px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .tool-card .tool-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+  .tool-card .tool-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== DIAGRAM TABLE (microscope parts) ===== */
+  .parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 14.5px;
+  }
+  .parts-table th {
+    text-align: left;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  .parts-table th:first-child { border-radius: 8px 0 0 0; }
+  .parts-table th:last-child { border-radius: 0 8px 0 0; }
+  .parts-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink-soft);
+  }
+  .parts-table tr:nth-child(even) td { background: var(--purple-light); }
+  .parts-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+  /* ===== MAGNIFICATION CALCULATOR ===== */
+  .calc-box {
+    background: var(--teal-light);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    margin: 20px 0;
+  }
+  .calc-formula {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--teal);
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .calc-example {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  /* ===== SAFETY RULES LIST (special styling) ===== */
+  .safety-list {
+    margin: 16px 0 24px;
+    padding: 0;
+    list-style: none;
+    counter-reset: safetynum;
+  }
+  .safety-list li {
+    position: relative;
+    counter-increment: safetynum;
+    background: var(--coral-light);
+    border-radius: 10px;
+    padding: 12px 16px 12px 50px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .safety-list li::before {
+    content: counter(safetynum);
+    position: absolute;
+    left: 12px; top: 12px;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--coral);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .safety-list li strong { color: var(--ink); }
+
+  /* ===== QUIZ ===== */
+  .quiz-box {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .quiz-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--purple-dark);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .quiz-q { font-weight: 600; color: var(--ink); margin-bottom: 10px; font-size: 15.5px; }
+  .quiz-opts { display: flex; flex-direction: column; gap: 6px; }
+  .quiz-opt {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    padding: 9px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .quiz-opt:hover { background: var(--purple-light); border-color: var(--purple); }
+  .quiz-opt.correct { background: var(--teal-light); border-color: var(--teal); color: var(--teal); font-weight: 600; }
+  .quiz-opt.wrong { background: var(--coral-light); border-color: var(--coral); color: var(--coral); }
+
+  /* ===== SUMMARY BOX ===== */
+  .summary-box {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+    border-radius: var(--radius);
+    padding: 28px 28px;
+    margin-top: 16px;
+  }
+  .summary-box h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+  .summary-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .summary-box li {
+    color: rgba(255,255,255,0.92);
+    font-size: 14.5px;
+    padding: 7px 0 7px 24px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .summary-box li:last-child { border-bottom: none; }
+  .summary-box li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: 7px;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+  }
+
+  /* ===== PROGRESS WIDGET ===== */
+  .progress-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 10px 18px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    z-index: 20;
+  }
+  .progress-ring {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: conic-gradient(var(--purple) calc(var(--pct, 0) * 1%), var(--border) 0);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .progress-ring-inner {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--surface);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--purple-dark);
+  }
+  .progress-text {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 32px 60px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 40px 20px 48px; }
+    main { padding: 36px 20px 90px; }
+    .toc-inner { padding: 12px 20px; }
+    .tool-card { flex: 1 1 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      Grade 9 Biology &middot; Chapter 1
+    </div>
+    <h1>Introduction to Biology</h1>
+    <p class="subtitle">Your complete study note for Chapter 1 — covering what biology is, the scientific method, lab and field tools, the microscope, and laboratory safety.</p>
+    <div class="source-note">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+      Based on the official Ethiopian Ministry of Education Grade 9 Biology textbook
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#s1" class="toc-pill">1.1 What is biology</a>
+    <a href="#s2" class="toc-pill">1.2 Scientific method</a>
+    <a href="#s3" class="toc-pill">1.3 Lab tools</a>
+    <a href="#s4" class="toc-pill">1.4 Field tools</a>
+    <a href="#s5" class="toc-pill">1.5 Microscope</a>
+    <a href="#s6" class="toc-pill">1.6 Using a microscope</a>
+    <a href="#s7" class="toc-pill">1.7 Lab safety</a>
+    <a href="#summary" class="toc-pill">Summary</a>
+  </div>
+</nav>
+
+<main id="mainContent">
+
+  <div class="section" id="s1">
+    <div class="section-head">
+      <div class="section-num">1.1</div>
+      <div>
+        <h2>What is biology and why do we study it?</h2>
+        <div class="section-sub">Textbook sections 1.1 &amp; 1.2</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.1 &middot; 7–9 min</span>
+
+    <p>Biology comes from two Greek words: <strong>bios</strong> meaning life, and <strong>logos</strong> meaning study. Biology is the scientific study of life or living things.</p>
+
+    <div class="key-term">
+      <div class="label">Key term</div>
+      <div class="term">Biology — the scientific study of life and living organisms.</div>
+    </div>
+
+    <h3 class="subhead">Properties shared by living things</h3>
+    <ul class="note-list">
+      <li>Composed of <strong>one or more cells</strong>.</li>
+      <li>Can <strong>grow</strong> and <strong>reproduce</strong>.</li>
+      <li>Transmit <strong>genetic information</strong> to their offspring.</li>
+      <li>Need <strong>energy</strong> to carry out life's activities.</li>
+      <li>Maintain stable internal conditions — called <strong>homeostasis</strong>.</li>
+      <li>Capable of <strong>evolutionary adaptation</strong> to the environment.</li>
+    </ul>
+
+    <h3 class="subhead">Why we study biology</h3>
+    <ul class="note-list">
+      <li>Helps us understand how living things work and interact with the environment.</li>
+      <li>Used to discover drugs that treat human diseases.</li>
+      <li>Applied in agriculture, forensics (DNA analysis), and ecology.</li>
+      <li>Used in fermentation to produce drinks like beer and wine.</li>
+      <li>Helps treat diseases such as AIDS, tuberculosis, and some cancers.</li>
+    </ul>
+
+    <div class="example-box">
+      <div class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
+      <div>
+        <div class="label">Real-world example</div>
+        <p>Penicillin, an antibiotic that saves millions of lives, comes from mould fungi. Wine, beer, bread, and cheese all depend on fermentation by yeast and bacteria — biology at work in everyday Ethiopian life.</p>
+      </div>
+    </div>
+
+    <h3 class="subhead">Biology and other sciences</h3>
+    <p>Biology merges with <strong>chemistry</strong> to study elements, molecules, and chemical bonding inside living organisms. Biology merges with <strong>physics</strong> to study processes like photosynthesis, which converts radiant energy into organic molecules.</p>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">Which of the following is not a property of life?</div>
+      <div class="quiz-opts" data-correct="0">
+        <div class="quiz-opt">Populations of organisms rarely change over time.</div>
+        <div class="quiz-opt">Living things exhibit complex but ordered organization.</div>
+        <div class="quiz-opt">Organisms take in energy and use it to perform life's activities.</div>
+        <div class="quiz-opt">Organisms reproduce their own kind.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s2">
+    <div class="section-head">
+      <div class="section-num">1.2</div>
+      <div>
+        <h2>The scientific method, step by step</h2>
+        <div class="section-sub">Textbook section 1.3</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.2 &middot; 8–9 min</span>
+
+    <p>Biology is a science of inquiry. Biologists are always curious about why or how things happen. By asking questions and seeking science-based answers — the <strong>scientific method</strong> — they come up with new theories that explain new findings.</p>
+
+    <ol class="step-list">
+      <li><strong>Observation</strong> — careful observation, often of a problem, leads to a question. Observations can be direct (using your senses) or indirect (using tools like microscopes).</li>
+      <li><strong>Asking questions</strong> — the observation leads the scientist to ask an inquiry.</li>
+      <li><strong>Forming a hypothesis</strong> — a proposed, testable scientific explanation for the question.</li>
+      <li><strong>Testing the hypothesis</strong> — through experimentation. Results must be repeatable by other scientists to count as scientific knowledge.</li>
+      <li><strong>Making conclusions</strong> — deciding whether the hypothesis is supported or should be rejected based on the results.</li>
+      <li><strong>Communicating findings</strong> — publishing results so other scientists and students can learn from them.</li>
+    </ol>
+
+    <div class="key-term">
+      <div class="label">Key term</div>
+      <div class="term">Hypothesis — a proposed scientific explanation (possible answer) for a question. A scientific hypothesis must be testable.</div>
+    </div>
+
+    <div class="example-box">
+      <div class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+      <div>
+        <div class="label">Worked example from the textbook</div>
+        <p>Your torch (hand lamp) doesn't switch on. <strong>Observation:</strong> the torch is dark. <strong>Question:</strong> why won't it light up? <strong>Hypothesis:</strong> maybe the batteries are dead. <strong>Experiment:</strong> replace the batteries and test again. <strong>Conclusion:</strong> if it now works, the hypothesis was correct.</p>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">Which of the following is the correct procedure of the scientific method?</div>
+      <div class="quiz-opts" data-correct="2">
+        <div class="quiz-opt">Experiment, conclusion, application, question, observation</div>
+        <div class="quiz-opt">Question, observation, experiment, analysis, prediction, result</div>
+        <div class="quiz-opt">Observation, question, hypothesis, prediction, experiment, results, conclusion</div>
+        <div class="quiz-opt">Observation, question, opinion, conclusion, hypothesis</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s3">
+    <div class="section-head">
+      <div class="section-num">1.3</div>
+      <div>
+        <h2>Laboratory tools every biologist uses</h2>
+        <div class="section-sub">Textbook section 1.4.1</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.3 &middot; 9–11 min</span>
+
+    <p>Biologists use many types of tools in the laboratory for measuring, observing, and culturing micro-organisms. The most important is the <strong>hand lens</strong> — a convex lens in a metal loop that gives an enlarged image, though it isn't enough to see the detail inside cells.</p>
+
+    <h3 class="subhead">Culturing and sterilizing equipment</h3>
+    <div class="tool-grid">
+      <div class="tool-card"><div class="tool-name">Autoclave</div><div class="tool-desc">Sterilizes samples using high heat and pressurized steam; kills microorganisms and their spores.</div></div>
+      <div class="tool-card"><div class="tool-name">Incubator</div><div class="tool-desc">Maintains the ideal temperature for growing micro-organisms.</div></div>
+      <div class="tool-card"><div class="tool-name">Petri dish</div><div class="tool-desc">A flat dish with a cover, used with gelling culture media like agar.</div></div>
+      <div class="tool-card"><div class="tool-name">Culture tubes</div><div class="tool-desc">Used to culture micro-organisms in solid or liquid media.</div></div>
+    </div>
+
+    <h3 class="subhead">General-purpose lab equipment</h3>
+    <div class="tool-grid">
+      <div class="tool-card"><div class="tool-name">Flask</div><div class="tool-desc">Flat-bottomed container with a long neck, for mixing or gently heating solutions.</div></div>
+      <div class="tool-card"><div class="tool-name">Balance</div><div class="tool-desc">Accurately weighs specimens and prepares solutions.</div></div>
+      <div class="tool-card"><div class="tool-name">Dropper</div><div class="tool-desc">Controls the precise amount of liquid added to a reaction.</div></div>
+      <div class="tool-card"><div class="tool-name">Tongs</div><div class="tool-desc">Metallic, scissor-shaped tool for lifting hot objects.</div></div>
+      <div class="tool-card"><div class="tool-name">Beaker</div><div class="tool-desc">Cylindrical glass container for holding or mixing solutions.</div></div>
+      <div class="tool-card"><div class="tool-name">Hotplate</div><div class="tool-desc">Used for heating solutions or culture media.</div></div>
+      <div class="tool-card"><div class="tool-name">pH meter</div><div class="tool-desc">Measures the acidity or basicity of a substance.</div></div>
+      <div class="tool-card"><div class="tool-name">Thermometer</div><div class="tool-desc">Measures the temperature of a substance.</div></div>
+      <div class="tool-card"><div class="tool-name">Forceps</div><div class="tool-desc">Used to hold or pick up small objects.</div></div>
+      <div class="tool-card"><div class="tool-name">Spatula</div><div class="tool-desc">Spoon-shaped tool for mixing, stirring, and scraping.</div></div>
+      <div class="tool-card"><div class="tool-name">Wash bottle</div><div class="tool-desc">Flexible bottle used to rinse lab materials with adjustable pressure.</div></div>
+      <div class="tool-card"><div class="tool-name">Bunsen burner</div><div class="tool-desc">Produces an open flame for heating and sterilizing.</div></div>
+    </div>
+
+    <h3 class="subhead">Dissection equipment</h3>
+    <div class="tool-grid">
+      <div class="tool-card"><div class="tool-name">Dissecting tool kit</div><div class="tool-desc">Includes a scalpel, scissors, and forceps for dissecting animals such as frogs.</div></div>
+      <div class="tool-card"><div class="tool-name">Dissecting pan</div><div class="tool-desc">The pan the specimen rests on during dissection.</div></div>
+      <div class="tool-card"><div class="tool-name">Crucible</div><div class="tool-desc">A small heat-resistant container, usually used to melt elements.</div></div>
+    </div>
+
+    <div class="example-box">
+      <div class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
+      <div>
+        <div class="label">Real-world example</div>
+        <p>An autoclave sterilizes lab equipment with heat and steam — the very same principle hospitals use to sterilize surgical tools before an operation.</p>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">Which piece of equipment sterilizes materials using high temperature and pressurized steam?</div>
+      <div class="quiz-opts" data-correct="2">
+        <div class="quiz-opt">Petri dish</div>
+        <div class="quiz-opt">Incubator</div>
+        <div class="quiz-opt">Autoclave</div>
+        <div class="quiz-opt">Hotplate</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s4">
+    <div class="section-head">
+      <div class="section-num">1.4</div>
+      <div>
+        <h2>Field tools — studying biology outdoors</h2>
+        <div class="section-sub">Textbook section 1.4.2</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.4 &middot; 5–7 min</span>
+
+    <p>Not all biology happens in a laboratory. Field tools let biologists study organisms directly in their natural habitat, rather than under controlled indoor conditions.</p>
+
+    <div class="tool-grid">
+      <div class="tool-card"><div class="tool-name">Insect net</div><div class="tool-desc">A net bag of cloth or fine mesh on a wire loop and pole, used to collect insects.</div></div>
+      <div class="tool-card"><div class="tool-name">Fishing net</div><div class="tool-desc">Made from woven fibres in a grid pattern, used to catch fish or aquatic organisms.</div></div>
+    </div>
+
+    <div class="example-box">
+      <div class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
+      <div>
+        <div class="label">Real-world example</div>
+        <p>Ethiopian biologists use insect nets in the field to safely collect specimens for study without harming the surrounding ecosystem.</p>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">Which of these is a field tool rather than a laboratory tool?</div>
+      <div class="quiz-opts" data-correct="1">
+        <div class="quiz-opt">Autoclave</div>
+        <div class="quiz-opt">Insect net</div>
+        <div class="quiz-opt">Petri dish</div>
+        <div class="quiz-opt">Bunsen burner</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s5">
+    <div class="section-head">
+      <div class="section-num">1.5</div>
+      <div>
+        <h2>The light microscope — parts and magnification</h2>
+        <div class="section-sub">Textbook section 1.5.1</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.5 &middot; 9–11 min</span>
+
+    <p>There are two main types of microscope. A <strong>light microscope</strong> uses a beam of light to view specimens. An <strong>electron microscope</strong> uses a beam of electrons and electromagnets instead of light and glass lenses — giving much higher magnification, enough to see viruses.</p>
+
+    <h3 class="subhead">Main parts of the light microscope</h3>
+    <table class="parts-table">
+      <tr><th>Part</th><th>Function</th></tr>
+      <tr><td>Eyepiece (ocular)</td><td>The part you look through; standard magnification 10x.</td></tr>
+      <tr><td>Eyepiece tube</td><td>Holds the eyepiece above the objective lens.</td></tr>
+      <tr><td>Objective lenses</td><td>Magnify the specimen further; usually 4x to 100x.</td></tr>
+      <tr><td>Arm</td><td>Connects and supports all the parts of the microscope.</td></tr>
+      <tr><td>Body tube</td><td>Connects the eyepiece to the objective lenses.</td></tr>
+      <tr><td>Nose piece</td><td>Rotating mount that holds multiple objective lenses.</td></tr>
+      <tr><td>Coarse adjustment</td><td>Brings the specimen into rough focus quickly.</td></tr>
+      <tr><td>Fine adjustment</td><td>Sharpens the focus precisely.</td></tr>
+      <tr><td>Stage</td><td>Where the specimen slide is placed.</td></tr>
+      <tr><td>Stage clip</td><td>Holds the slide in place on the stage.</td></tr>
+      <tr><td>Aperture</td><td>The hole in the stage through which light passes.</td></tr>
+      <tr><td>Illuminator</td><td>The microscope's light source, located at the base.</td></tr>
+      <tr><td>Condenser</td><td>Focuses light from the illuminator onto the specimen.</td></tr>
+      <tr><td>Diaphragm (iris)</td><td>Controls how much light reaches the specimen.</td></tr>
+      <tr><td>Base</td><td>The bottom part that supports the whole microscope.</td></tr>
+    </table>
+
+    <div class="calc-box">
+      <div class="calc-formula">Total magnification = eyepiece × objective lens</div>
+      <div class="calc-example">Example: a <strong>10x eyepiece</strong> with a <strong>40x objective</strong> lens gives a total magnification of <strong>400x</strong> — enough to clearly see most cells.</div>
+    </div>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">If the eyepiece is 10x and the objective lens is 40x, what is the total magnification?</div>
+      <div class="quiz-opts" data-correct="2">
+        <div class="quiz-opt">50x</div>
+        <div class="quiz-opt">100x</div>
+        <div class="quiz-opt">400x</div>
+        <div class="quiz-opt">4000x</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s6">
+    <div class="section-head">
+      <div class="section-num">1.6</div>
+      <div>
+        <h2>How to handle and use a microscope correctly</h2>
+        <div class="section-sub">Textbook section 1.5.2</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.6 &middot; 8–10 min</span>
+
+    <h3 class="subhead">Carrying and setting up</h3>
+    <ol class="step-list">
+      <li>Carry the microscope by gripping the arm with one hand and supporting the base with the other.</li>
+      <li>Hold it upright at all times and never bump it against anything.</li>
+      <li>Make sure the slide is clean and dry before placing it on the stage.</li>
+      <li>Center the area of interest over the hole in the stage.</li>
+    </ol>
+
+    <h3 class="subhead">Focusing procedure</h3>
+    <ol class="step-list">
+      <li>Always focus on low power (4x objective) first, even if you eventually need higher magnification.</li>
+      <li>Use the coarse adjustment knob first, then the fine adjustment knob to sharpen the image.</li>
+      <li>To increase magnification, center the area of interest, then switch to a higher power lens.</li>
+      <li>Always focus by moving the lens and specimen further apart, never closer together.</li>
+    </ol>
+
+    <h3 class="subhead">Special rules and putting it away</h3>
+    <ul class="note-list">
+      <li>Use immersion oil only with the <strong>100x objective</strong>, and only one drop.</li>
+      <li>Never touch the lens surfaces with fingers or anything else.</li>
+      <li>Lower the stage before removing the slide.</li>
+      <li>Clean the microscope with lens paper and alcohol when finished.</li>
+      <li>Place the 4x objective over the stage and lower the stage fully before storing.</li>
+      <li>Turn off the light, wrap the cord properly, and return it to its correct cabinet.</li>
+    </ul>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">When starting to view a new specimen, which magnification should you focus with first?</div>
+      <div class="quiz-opts" data-correct="2">
+        <div class="quiz-opt">The highest available objective</div>
+        <div class="quiz-opt">The 100x oil immersion objective</div>
+        <div class="quiz-opt">The low power (4x) objective</div>
+        <div class="quiz-opt">Whichever objective is already in place</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="s7">
+    <div class="section-head">
+      <div class="section-num">1.7</div>
+      <div>
+        <h2>General laboratory safety rules</h2>
+        <div class="section-sub">Textbook section 1.6</div>
+      </div>
+    </div>
+    <span class="video-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Video 1.7 &middot; 7–9 min</span>
+
+    <p>Safety is the condition of being protected from harm or danger. Laboratory safety matters before doing any activity — working carefully, dealing with minor problems before they grow, and keeping safety constantly in mind.</p>
+
+    <ol class="safety-list">
+      <li><strong>Follow instructions</strong> — read and understand the lab procedure fully before starting, and know how to use all equipment.</li>
+      <li><strong>Know your safety equipment</strong> — locate the fire extinguisher and first-aid kit, and check that they work.</li>
+      <li><strong>Dress for the laboratory</strong> — wear a lab coat, safety goggles, gloves, closed shoes, and a respirator mask for toxic chemicals.</li>
+      <li><strong>Never eat or drink in the lab</strong> — and never store food in a fridge containing experiments or chemicals.</li>
+      <li><strong>Never taste or sniff chemicals</strong> — always label containers and read the label before use.</li>
+      <li><strong>Act responsibly</strong> — never randomly mix chemicals; it can cause explosions, fire, or toxic gas.</li>
+      <li><strong>Clean up properly</strong> — start and end every session with clean, properly stored equipment and waste.</li>
+      <li><strong>Handle chemicals properly</strong> — wear a respirator mask for toxic chemicals and never let them touch bare skin.</li>
+      <li><strong>Know accident response</strong> — flood a burn or chemical exposure with cold tap water immediately.</li>
+      <li><strong>Stay vigilant</strong> — never leave containers open or unlabeled; safety and hygiene apply at all times.</li>
+    </ol>
+
+    <div class="quiz-box">
+      <div class="quiz-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.82 1c-.5 1-1.92 1.5-1.92 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>Check your understanding</div>
+      <div class="quiz-q">Which of the following is not the correct method of handling chemicals?</div>
+      <div class="quiz-opts" data-correct="3">
+        <div class="quiz-opt">Wearing a disposable respirator mask when handling toxic chemicals.</div>
+        <div class="quiz-opt">Never allowing laboratory chemicals to contact your bare skin.</div>
+        <div class="quiz-opt">Never leaving chemical containers open.</div>
+        <div class="quiz-opt">Returning unused chemicals back into their original container.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="summary" style="margin-bottom: 0;">
+    <div class="summary-box">
+      <h3>Chapter 1 summary</h3>
+      <ul>
+        <li>Biology is the scientific study of living things.</li>
+        <li>Living organisms interact with themselves and the environment at all levels of biological organization.</li>
+        <li>Biological inquiry depends on the scientific method — a series of steps scientists follow when experimenting and reporting results.</li>
+        <li>The scientific method ensures conclusions are based on observation and that other scientists can repeat the experiments.</li>
+        <li>Biologists use many tools — for measuring, observing, and culturing — with the microscope being the most important.</li>
+        <li>A microscope is an instrument used to see very small objects through magnification.</li>
+        <li>Laboratory safety must come first in every activity, since careful work prevents minor problems from becoming major ones.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Grade 9 Biology &middot; Chapter 1 study note &middot; Built for Chkela
+</footer>
+
+<div class="progress-widget">
+  <div class="progress-ring" id="progressRing" style="--pct: 0;">
+    <div class="progress-ring-inner" id="progressPct">0%</div>
+  </div>
+  <div class="progress-text" id="progressText">Reading progress</div>
+</div>
+
+<script>
+  document.querySelectorAll('.quiz-opts').forEach(function(group) {
+    var correctIdx = parseInt(group.dataset.correct, 10);
+    var opts = group.querySelectorAll('.quiz-opt');
+    opts.forEach(function(opt, idx) {
+      opt.addEventListener('click', function() {
+        opts.forEach(function(o) { o.classList.remove('correct', 'wrong'); });
+        if (idx === correctIdx) {
+          opt.classList.add('correct');
+        } else {
+          opt.classList.add('wrong');
+          opts[correctIdx].classList.add('correct');
+        }
+      });
+    });
+  });
+
+  function updateProgress() {
+    var main = document.getElementById('mainContent');
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? Math.min(100, Math.round((scrollTop / docHeight) * 100)) : 0;
+    document.getElementById('progressRing').style.setProperty('--pct', pct);
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress);
+  updateProgress();
+</script>
+
+</body>
+</html>

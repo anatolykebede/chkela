@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140">
+  <rect width="520" height="140" fill="#0f1115"/>
+  <text x="260" y="28" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Food chain</text>
+  <g font-family="system-ui,sans-serif" font-size="15" fill="#e8eaed" text-anchor="middle">
+    <rect x="20" y="55" width="90" height="40" rx="8" fill="#2a3140" stroke="#7dd3c0" stroke-width="2"/>
+    <text x="65" y="80">Grass</text>
+    <text x="130" y="80" fill="#c4a35a" font-size="20">→</text>
+    <rect x="150" y="55" width="90" height="40" rx="8" fill="#2a3140" stroke="#6ea8ff" stroke-width="2"/>
+    <text x="195" y="80">Cricket</text>
+    <text x="260" y="80" fill="#c4a35a" font-size="20">→</text>
+    <rect x="280" y="55" width="90" height="40" rx="8" fill="#2a3140" stroke="#e85d75" stroke-width="2"/>
+    <text x="325" y="80">Lizard</text>
+    <text x="390" y="80" fill="#c4a35a" font-size="20">→</text>
+    <rect x="410" y="55" width="90" height="40" rx="8" fill="#2a3140" stroke="#c4a35a" stroke-width="2"/>
+    <text x="455" y="80">Chicken</text>
+  </g>
+  <text x="260" y="125" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">Cricket = 2nd trophic level, 1st-level consumer</text>
+</svg>

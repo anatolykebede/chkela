@@ -1,0 +1,84 @@
+{
+  "profiles": {
+    "+251911111111": {
+      "phone": "+251911111111",
+      "mapId": "user-a",
+      "displayName": "Abebe",
+      "school": "Bole",
+      "bio": "Studying maths daily",
+      "tagline": "",
+      "grade": "Grade 12",
+      "cityId": "addis-bole",
+      "subjects": [
+        "Mathematics"
+      ],
+      "moodEmoji": "",
+      "moodLabel": "",
+      "updatedAt": "2026-09-07T21:08:47.211Z"
+    },
+    "+251922222222": {
+      "phone": "+251922222222",
+      "mapId": "user-b",
+      "displayName": "Hanna",
+      "school": "Lideta",
+      "bio": "Physics grind",
+      "tagline": "",
+      "grade": "Grade 11",
+      "cityId": "addis-cmc",
+      "subjects": [
+        "Physics"
+      ],
+      "moodEmoji": "",
+      "moodLabel": "",
+      "updatedAt": "2026-09-07T21:08:47.227Z"
+    },
+    "+251947819388": {
+      "phone": "+251947819388",
+      "mapId": "u251947819388",
+      "displayName": "Anatoly",
+      "school": "Eps",
+      "bio": "i know who i am",
+      "tagline": "",
+      "grade": "Grade 12",
+      "cityId": "addis-bole",
+      "subjects": [
+        "ICT",
+        "Economics",
+        "History",
+        "Mathematics"
+      ],
+      "moodEmoji": "🏆",
+      "moodLabel": "Matric countdown",
+      "updatedAt": "2026-09-09T15:28:55.963Z"
+    }
+  },
+  "friendships": [
+    {
+      "id": "f_mtrq7x3d_j3yvb",
+      "fromPhone": "+251911000000",
+      "toId": "hanna-b",
+      "status": "accepted",
+      "createdAt": "2026-09-07T21:02:04.105Z",
+      "updatedAt": "2026-09-07T21:02:04.105Z"
+    },
+    {
+      "id": "f_mtrqgk5i_0kig4",
+      "fromPhone": "+251911111111",
+      "toId": "+251922222222",
+      "status": "pending",
+      "createdAt": "2026-09-07T21:08:47.238Z",
+      "updatedAt": "2026-09-07T21:08:47.238Z"
+    },
+    {
+      "id": "f_mtrsdsn2_94cnt",
+      "fromPhone": "+251947819388",
+      "toId": "hanna-b",
+      "status": "accepted",
+      "createdAt": "2026-09-07T22:02:37.496Z",
+      "updatedAt": "2026-09-07T22:02:37.496Z"
+    }
+  ],
+  "profileViews": {
+    "+251911111111→+251922222222": 1788815327250
+  }
+}

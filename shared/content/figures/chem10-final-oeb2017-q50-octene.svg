@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+  <rect width="520" height="220" fill="#0f1115"/>
+  <text x="260" y="28" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Bond-line structure</text>
+  <!-- 1-octene: C1=C2(Me)—C3—C4(Et)—C5—C6—C7—C8 -->
+  <g stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- =C1 terminal double: short stub + double to C2 -->
+    <line x1="60" y1="70" x2="110" y2="110"/>
+    <line x1="66" y1="64" x2="116" y2="104"/>
+    <!-- methyl on C2 upward -->
+    <line x1="110" y1="110" x2="110" y2="55"/>
+    <!-- C2 to C3 -->
+    <line x1="110" y1="110" x2="160" y2="145"/>
+    <!-- C3 to C4 -->
+    <line x1="160" y1="145" x2="210" y2="110"/>
+    <!-- ethyl on C4 downward -->
+    <line x1="210" y1="110" x2="210" y2="165"/>
+    <line x1="210" y1="165" x2="250" y2="190"/>
+    <!-- C4 to C5 -->
+    <line x1="210" y1="110" x2="260" y2="145"/>
+    <!-- C5 to C6 -->
+    <line x1="260" y1="145" x2="310" y2="110"/>
+    <!-- C6 to C7 -->
+    <line x1="310" y1="110" x2="360" y2="145"/>
+    <!-- C7 to C8 -->
+    <line x1="360" y1="145" x2="410" y2="110"/>
+  </g>
+  <text x="260" y="205" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">2-methyl + 4-ethyl on 1-octene chain</text>
+</svg>

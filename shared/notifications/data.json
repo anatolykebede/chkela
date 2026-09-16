@@ -1,0 +1,202 @@
+{
+  "tokens": [
+    {
+      "token": "dHJbLhsSPUmihJkgQOkFjh:APA91bFuamgK31o5YvXVeqr2hNm_QFhVyRsSNNPizNc25NyoDF3hDtzeuRn7YXLarSt-3X2fn50TsClYNOXGVKZEaatUlWuVw3EHvp8VRCScNc072w-8qqk",
+      "phone": "+251947819388",
+      "platform": "ios",
+      "updatedAt": "2026-09-09T15:28:55.981Z",
+      "createdAt": "2026-09-06T21:03:54.894Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "n_mtq65ndf",
+      "title": "Test",
+      "body": "Hello from admin",
+      "phone": null,
+      "topic": null,
+      "createdAt": "2026-09-06T18:52:39.699Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No serviceAccount.json — notification saved but not pushed via FCM"
+    },
+    {
+      "id": "n_mtrqgk5m",
+      "title": "Friend request",
+      "body": "Abebe sent you a friend request on Chkela",
+      "phone": "+251922222222",
+      "topic": null,
+      "createdAt": "2026-09-07T21:08:47.242Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No serviceAccount.json — notification saved but not pushed via FCM"
+    },
+    {
+      "id": "n_mtrqgk5v",
+      "title": "Profile view",
+      "body": "Abebe viewed your profile on the map",
+      "phone": "+251922222222",
+      "topic": null,
+      "createdAt": "2026-09-07T21:08:47.251Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No serviceAccount.json — notification saved but not pushed via FCM"
+    },
+    {
+      "id": "n_mtrr0q0v",
+      "title": "Chkela FCM test",
+      "body": "Push is connected",
+      "phone": "+251947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:24:27.967Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No serviceAccount.json — notification saved but not pushed via FCM"
+    },
+    {
+      "id": "n_mtrr0yve",
+      "title": "Direct test",
+      "body": "from node",
+      "phone": "+251947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:24:39.434Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No serviceAccount.json — notification saved but not pushed via FCM"
+    },
+    {
+      "id": "n_mtrr1qt7",
+      "title": "Chkela FCM test",
+      "body": "Push is connected",
+      "phone": "+251947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:25:15.643Z",
+      "status": "stored_only",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "Cannot read properties of undefined (reading 'length')"
+    },
+    {
+      "id": "n_mtrr2u4q",
+      "title": "Chkela FCM test",
+      "body": "Push is connected",
+      "phone": "+251947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:26:06.602Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null
+    },
+    {
+      "id": "n_mtrr8w37",
+      "title": "heyyyy",
+      "body": "dwdasdadasda",
+      "phone": "0947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:30:49.075Z",
+      "status": "failed",
+      "successCount": 0,
+      "failureCount": 0,
+      "error": "No device tokens for that phone"
+    },
+    {
+      "id": "n_mtrr9gfl",
+      "title": "hryyyy",
+      "body": "adfasdfasdfasdfsafasdf",
+      "phone": "+251947819388",
+      "topic": null,
+      "createdAt": "2026-09-07T21:31:15.441Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null
+    },
+    {
+      "id": "n_mtrripdl",
+      "title": "fuckkkkkk",
+      "body": "youuuuuuuu",
+      "phone": null,
+      "phones": [
+        "+251947819388"
+      ],
+      "audience": "all",
+      "topic": null,
+      "createdAt": "2026-09-07T21:38:26.937Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null,
+      "targetCount": 1
+    },
+    {
+      "id": "n_mtrrjc8v",
+      "title": "fuckk",
+      "body": "offfff",
+      "phone": null,
+      "phones": [
+        "+251947819388"
+      ],
+      "audience": "all",
+      "topic": null,
+      "createdAt": "2026-09-07T21:38:56.575Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null,
+      "targetCount": 1
+    },
+    {
+      "id": "n_mtrrkgft",
+      "title": "All users test",
+      "body": "Group all",
+      "phone": null,
+      "phones": [
+        "+251947819388"
+      ],
+      "audience": "all",
+      "topic": null,
+      "createdAt": "2026-09-07T21:39:48.665Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null,
+      "targetCount": 1
+    },
+    {
+      "id": "n_mtrrojmh",
+      "title": "All devices ping",
+      "body": "Broadcast all fix",
+      "phone": null,
+      "phones": null,
+      "audience": "all",
+      "topic": null,
+      "createdAt": "2026-09-07T21:42:59.417Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null,
+      "targetCount": 1
+    },
+    {
+      "id": "n_mtrs2dy0",
+      "title": "fuuuu",
+      "body": "kkkkkkk",
+      "phone": null,
+      "phones": null,
+      "audience": "all",
+      "topic": null,
+      "createdAt": "2026-09-07T21:53:45.240Z",
+      "status": "sent",
+      "successCount": 1,
+      "failureCount": 0,
+      "error": null,
+      "targetCount": 1
+    }
+  ]
+}

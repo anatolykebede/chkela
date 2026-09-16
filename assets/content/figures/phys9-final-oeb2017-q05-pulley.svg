@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="420" viewBox="0 0 320 420">
+  <rect width="320" height="420" fill="#0f1115"/>
+  <text x="160" y="28" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Pulley system</text>
+  <!-- support -->
+  <line x1="60" y1="50" x2="260" y2="50" stroke="#9aa3ad" stroke-width="6"/>
+  <path d="M70,42 L80,50 M100,42 L110,50 M130,42 L140,50 M160,42 L170,50 M190,42 L200,50 M220,42 L230,50 M250,42 L255,50" stroke="#9aa3ad" stroke-width="2"/>
+  <!-- top block -->
+  <rect x="110" y="70" width="100" height="50" rx="8" fill="#2a3140" stroke="#8b9cff" stroke-width="2"/>
+  <circle cx="135" cy="95" r="12" fill="#1a1f27" stroke="#6ea8ff" stroke-width="2"/>
+  <circle cx="185" cy="95" r="12" fill="#1a1f27" stroke="#6ea8ff" stroke-width="2"/>
+  <!-- bottom block -->
+  <rect x="120" y="200" width="80" height="45" rx="8" fill="#2a3140" stroke="#7dd3c0" stroke-width="2"/>
+  <circle cx="140" cy="222" r="11" fill="#1a1f27" stroke="#7dd3c0" stroke-width="2"/>
+  <circle cx="180" cy="222" r="11" fill="#1a1f27" stroke="#7dd3c0" stroke-width="2"/>
+  <!-- ropes: 4 supporting strands -->
+  <path d="M135,107 L140,211 M185,107 L180,211 M160,120 L160,200 M180,233 L230,120" fill="none" stroke="#e8eaed" stroke-width="3"/>
+  <path d="M230,120 L250,90" fill="none" stroke="#e8eaed" stroke-width="3"/>
+  <polygon points="250,90 242,108 258,108" fill="#e85d75"/>
+  <text x="265" y="95" fill="#e85d75" font-size="16" font-family="system-ui,sans-serif" font-weight="700">F</text>
+  <!-- load -->
+  <line x1="160" y1="245" x2="160" y2="290" stroke="#c4a35a" stroke-width="3"/>
+  <rect x="130" y="290" width="60" height="50" rx="6" fill="#c4a35a"/>
+  <text x="160" y="322" text-anchor="middle" fill="#0f1115" font-size="18" font-family="system-ui,sans-serif" font-weight="700">P</text>
+  <text x="160" y="380" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">4 rope segments (VR = 4)</text>
+</svg>

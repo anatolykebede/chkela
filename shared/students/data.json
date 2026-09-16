@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "s_selam",
+      "name": "Selam Tadesse",
+      "phone": "+251911111111",
+      "status": "active"
+    },
+    {
+      "id": "s_hanna",
+      "name": "Hanna B.",
+      "phone": "+251922222222",
+      "status": "active"
+    },
+    {
+      "id": "s_daniel",
+      "name": "Daniel M.",
+      "phone": "+251933333333",
+      "status": "active"
+    },
+    {
+      "id": "s_meron",
+      "name": "Meron A.",
+      "phone": "+251944444444",
+      "status": "inactive"
+    }
+  ]
+}

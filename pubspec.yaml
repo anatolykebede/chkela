@@ -1,0 +1,81 @@
+name: chkela
+description: "Edtech app for high school students."
+publish_to: 'none'
+# Store update after published chkela101 (1.1.9). Keep +build > last Play/App Store build.
+version: 1.2.0+20
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  flutter_native_splash: ^2.4.7
+  flutter_svg: ^2.0.9
+  lucide_icons: ^0.257.0
+  go_router: ^13.0.0
+  riverpod: ^2.5.1
+  flutter_riverpod: ^2.5.1
+  lottie: ^3.3.3
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.13.1
+  shared_preferences: ^2.5.5
+  http: ^1.6.0
+  flutter_math_fork: ^0.7.4
+  path_provider: ^2.1.5
+  firebase_core: ^4.15.0
+  firebase_messaging: ^16.7.0
+  flutter_local_notifications: ^20.1.0
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  video_player: ^2.10.1
+  flutter_secure_storage: ^10.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# firebase_core_web 3.11.0 uses Object.isA (needs Dart 3.12); pin 3.12.0 for web builds on Dart 3.9.
+dependency_overrides:
+  firebase_core_web: 3.12.0
+
+flutter_native_splash:
+  # No branded native splash. OS shows a blank black frame until Flutter paints
+  # SplashScreen (native cannot render the animated in-app splash UI).
+  color: "#000000"
+  android_12:
+    color: "#000000"
+    # Omit icon so Android 12 does not show a second logo splash.
+  ios: true
+  android: true
+  web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/splash_logo.png
+    - assets/branding/splash.mp4
+    - assets/lottie/fire.json
+    - assets/lottie/new sad face.json
+    - assets/lottie/biology.json
+    - assets/lottie/chemistry.json
+    - assets/lottie/physics.json
+    - assets/lottie/geography.json
+    - assets/lottie/history.json
+    - assets/lottie/economics.json
+    - assets/lottie/calculator.json
+    - assets/lottie/english.json
+    - assets/notes/biology_ch1.html
+    - assets/content/data.json
+    - assets/content/figures/
+    - assets/path/data.json
+    - assets/payment/cbe_logo.svg
+    - assets/payment/chapa_logo.svg
+    - assets/payment/telegram_icon.svg
+  fonts:
+    - family: TxtGroovySmooth
+      fonts:
+        - asset: assets/fonts/txtgroovysmooth.ttf

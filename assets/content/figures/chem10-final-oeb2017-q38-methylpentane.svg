@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="190" viewBox="0 0 720 190">
+  <rect width="720" height="190" fill="#0f1115"/>
+  <text x="360" y="22" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">Bond-line structures (options A–D)</text>
+  <!-- A: 2-methylpentane -->
+  <g transform="translate(20,20)" stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,90 50,55 80,90 110,55 140,90"/>
+    <line x1="50" y1="55" x2="50" y2="20"/>
+  </g>
+  <text x="100" y="165" text-anchor="middle" fill="#c4a35a" font-size="18" font-family="system-ui,sans-serif" font-weight="700">A</text>
+  <!-- B -->
+  <g transform="translate(190,20)" stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,90 50,55 80,90 110,55 140,90"/>
+    <line x1="110" y1="55" x2="110" y2="20"/>
+  </g>
+  <text x="270" y="165" text-anchor="middle" fill="#c4a35a" font-size="18" font-family="system-ui,sans-serif" font-weight="700">B</text>
+  <!-- C -->
+  <g transform="translate(360,20)" stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,90 50,55 80,90 110,55 140,90"/>
+    <line x1="110" y1="55" x2="110" y2="20"/>
+  </g>
+  <text x="440" y="165" text-anchor="middle" fill="#c4a35a" font-size="18" font-family="system-ui,sans-serif" font-weight="700">C</text>
+  <!-- D: 3-methylpentane -->
+  <g transform="translate(530,20)" stroke="#e8eaed" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,90 50,55 80,90 110,55 140,90"/>
+    <line x1="80" y1="90" x2="80" y2="125"/>
+  </g>
+  <text x="610" y="165" text-anchor="middle" fill="#c4a35a" font-size="18" font-family="system-ui,sans-serif" font-weight="700">D</text>
+</svg>

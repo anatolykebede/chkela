@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220">
+  <rect width="720" height="220" fill="#0f1115"/>
+  <text x="360" y="24" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Which compound is aromatic?</text>
+  <!-- A: incomplete open hex with 2 double bonds -->
+  <g transform="translate(40,50)" stroke="#e8eaed" stroke-width="2" fill="none">
+    <polyline points="50,20 80,20 95,46 80,72 50,72 35,46 50,20"/>
+    <!-- break top-right: redraw without closing fully - use open path -->
+  </g>
+  <g transform="translate(40,50)" stroke="#e8eaed" stroke-width="2" fill="none">
+    <!-- open chain hex-like: missing one bond -->
+    <path d="M50,20 L80,20 L95,46 L80,72 L50,72 L35,46"/>
+    <line x1="50" y1="20" x2="35" y2="46"/>
+    <!-- double bonds -->
+    <line x1="55" y1="26" x2="75" y2="26"/>
+    <line x1="78" y1="66" x2="55" y2="66"/>
+  </g>
+  <text x="105" y="195" text-anchor="middle" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">A</text>
+
+  <!-- B: cyclopentadiene -->
+  <g transform="translate(210,55)" stroke="#e8eaed" stroke-width="2" fill="none">
+    <polygon points="60,15 95,40 82,80 38,80 25,40"/>
+    <line x1="63" y1="22" x2="88" y2="42"/>
+    <line x1="78" y1="74" x2="42" y2="74"/>
+  </g>
+  <text x="270" y="195" text-anchor="middle" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">B</text>
+
+  <!-- C: cyclopentadienyl cation -->
+  <g transform="translate(380,55)" stroke="#e8eaed" stroke-width="2" fill="none">
+    <polygon points="60,15 95,40 82,80 38,80 25,40"/>
+    <line x1="63" y1="22" x2="88" y2="42"/>
+    <line x1="78" y1="74" x2="42" y2="74"/>
+    <text x="52" y="12" fill="#e85d75" font-size="16" font-family="system-ui,sans-serif" font-weight="700" stroke="none">+</text>
+  </g>
+  <text x="440" y="195" text-anchor="middle" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">C</text>
+
+  <!-- D: naphthalene -->
+  <g transform="translate(530,50)" stroke="#e8eaed" stroke-width="2" fill="none">
+    <!-- left ring -->
+    <polygon points="40,20 70,20 85,46 70,72 40,72 25,46"/>
+    <!-- right ring sharing right side of left -->
+    <polygon points="70,20 100,20 115,46 100,72 70,72 85,46"/>
+    <!-- double bonds left -->
+    <line x1="45" y1="26" x2="65" y2="26"/>
+    <line x1="78" y1="50" x2="65" y2="68"/>
+    <line x1="35" y1="50" x2="45" y2="68"/>
+    <!-- double bonds right -->
+    <line x1="75" y1="26" x2="95" y2="26"/>
+    <line x1="108" y1="50" x2="95" y2="68"/>
+  </g>
+  <text x="605" y="195" text-anchor="middle" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">D</text>
+</svg>

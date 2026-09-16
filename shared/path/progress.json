@@ -1,0 +1,30 @@
+{
+  "progress": [
+    {
+      "id": "pp_mtu94jgy",
+      "phone": "+251947819388",
+      "currentLevelId": "path-8",
+      "currentLevelNumber": 8,
+      "currentLevelTitle": "Taxonomy",
+      "clearedCount": 7,
+      "totalStars": 15,
+      "streak": 1,
+      "xp": 275,
+      "stars": {
+        "grade-9:path-1": 1,
+        "grade-9:path-2": 1,
+        "grade-9:path-3": 1,
+        "grade-9:path-4": 3,
+        "grade-9:path-5": 3,
+        "grade-9:path-6": 3,
+        "grade-9:path-7": 3
+      },
+      "weakSkills": {
+        "scientific-method": 1,
+        "define-biology": 2
+      },
+      "dailyDoneDay": "2026-09-09",
+      "updatedAt": "2026-09-09T15:27:09.783Z"
+    }
+  ]
+}

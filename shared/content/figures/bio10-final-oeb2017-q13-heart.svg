@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380">
+  <rect width="420" height="380" fill="#0f1115"/>
+  <text x="210" y="24" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Human heart (schematic)</text>
+  <!-- chambers -->
+  <ellipse cx="150" cy="130" rx="55" ry="40" fill="#2a3140" stroke="#6ea8ff" stroke-width="2"/>
+  <ellipse cx="270" cy="130" rx="55" ry="40" fill="#2a3140" stroke="#e85d75" stroke-width="2"/>
+  <ellipse cx="150" cy="240" rx="60" ry="55" fill="#2a3140" stroke="#6ea8ff" stroke-width="2"/>
+  <ellipse cx="270" cy="240" rx="60" ry="55" fill="#2a3140" stroke="#e85d75" stroke-width="2"/>
+  <text x="150" y="135" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">RA</text>
+  <text x="270" y="135" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">LA</text>
+  <text x="150" y="245" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">RV</text>
+  <text x="270" y="245" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">LV</text>
+  <!-- valves 6 and 12 -->
+  <line x1="150" y1="170" x2="150" y2="185" stroke="#c4a35a" stroke-width="4"/>
+  <circle cx="150" cy="178" r="10" fill="none" stroke="#c4a35a" stroke-width="2"/>
+  <text x="95" y="185" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">6</text>
+  <line x1="270" y1="170" x2="270" y2="185" stroke="#7dd3c0" stroke-width="4"/>
+  <circle cx="270" cy="178" r="10" fill="none" stroke="#7dd3c0" stroke-width="2"/>
+  <text x="300" y="185" fill="#7dd3c0" font-size="16" font-family="system-ui,sans-serif" font-weight="700">12</text>
+  <text x="210" y="340" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">6 = AV valve (right) · 12 = AV valve (left)</text>
+  <text x="210" y="360" text-anchor="middle" fill="#9aa3ad" font-size="11" font-family="system-ui,sans-serif">Tricuspid and bicuspid (mitral)</text>
+</svg>

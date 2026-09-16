@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="280" viewBox="0 0 480 280">
+  <rect width="480" height="280" fill="#0f1115"/>
+  <g fill="none" stroke="#e8eaed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- outer loop -->
+    <line x1="60" y1="200" x2="60" y2="60"/>
+    <line x1="60" y1="60" x2="100" y2="60"/>
+    <!-- parallel split -->
+    <line x1="100" y1="40" x2="100" y2="100"/>
+    <path d="M100,40 L120,40 L125,32 L135,48 L145,32 L155,48 L165,32 L175,40 L200,40"/>
+    <path d="M100,100 L120,100 L125,92 L135,108 L145,92 L155,108 L165,92 L175,100 L200,100"/>
+    <line x1="200" y1="40" x2="200" y2="100"/>
+    <line x1="200" y1="60" x2="260" y2="60"/>
+    <!-- 4 ohm series on top-right -->
+    <path d="M260,60 L280,60 L285,52 L295,68 L305,52 L315,68 L325,52 L335,60 L360,60"/>
+    <line x1="360" y1="60" x2="420" y2="60"/>
+    <line x1="420" y1="60" x2="420" y2="200"/>
+    <line x1="420" y1="200" x2="280" y2="200"/>
+    <!-- battery -->
+    <line x1="268" y1="175" x2="268" y2="225"/>
+    <line x1="258" y1="185" x2="258" y2="215"/>
+    <line x1="248" y1="175" x2="248" y2="225"/>
+    <line x1="238" y1="185" x2="238" y2="215"/>
+    <line x1="228" y1="200" x2="60" y2="200"/>
+  </g>
+  <text x="145" y="28" fill="#9aa3ad" font-size="14" font-family="system-ui,sans-serif">3 ©</text>
+  <text x="145" y="122" fill="#9aa3ad" font-size="14" font-family="system-ui,sans-serif">6 ©</text>
+  <text x="290" y="90" fill="#9aa3ad" font-size="14" font-family="system-ui,sans-serif">4 ©</text>
+  <text x="275" y="245" fill="#7dd3c0" font-size="16" font-family="system-ui,sans-serif" font-weight="700">+</text>
+  <text x="220" y="245" fill="#e85d75" font-size="16" font-family="system-ui,sans-serif" font-weight="700"></text>
+</svg>

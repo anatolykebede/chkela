@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420">
+  <rect width="360" height="420" fill="#0f1115"/>
+  <text x="180" y="24" text-anchor="middle" fill="#e8eaed" font-size="14" font-family="system-ui,sans-serif" font-weight="600">Respiratory system</text>
+  <!-- head outline -->
+  <ellipse cx="180" cy="70" rx="40" ry="45" fill="none" stroke="#9aa3ad" stroke-width="1.5"/>
+  <!-- pharynx 2 -->
+  <line x1="180" y1="100" x2="180" y2="130" stroke="#6ea8ff" stroke-width="8" stroke-linecap="round"/>
+  <text x="210" y="120" fill="#6ea8ff" font-size="14" font-family="system-ui,sans-serif" font-weight="700">2</text>
+  <!-- larynx 3 -->
+  <rect x="165" y="128" width="30" height="28" rx="4" fill="#2a3140" stroke="#c4a35a" stroke-width="2"/>
+  <text x="210" y="150" fill="#c4a35a" font-size="16" font-family="system-ui,sans-serif" font-weight="700">3</text>
+  <!-- trachea 4 -->
+  <line x1="180" y1="156" x2="180" y2="240" stroke="#7dd3c0" stroke-width="10" stroke-linecap="round"/>
+  <text x="210" y="200" fill="#7dd3c0" font-size="14" font-family="system-ui,sans-serif" font-weight="700">4</text>
+  <!-- bronchi / lungs -->
+  <path d="M180,240 Q140,260 110,300 Q140,340 160,360" fill="none" stroke="#e8eaed" stroke-width="3"/>
+  <path d="M180,240 Q220,260 250,300 Q220,340 200,360" fill="none" stroke="#e8eaed" stroke-width="3"/>
+  <ellipse cx="130" cy="320" rx="50" ry="70" fill="#2a3140" stroke="#e85d75" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="230" cy="320" rx="50" ry="70" fill="#2a3140" stroke="#e85d75" stroke-width="1.5" opacity="0.7"/>
+  <text x="230" y="300" fill="#e85d75" font-size="12" font-family="system-ui,sans-serif">Bronchi</text>
+  <text x="180" y="405" text-anchor="middle" fill="#9aa3ad" font-size="12" font-family="system-ui,sans-serif">3 = larynx (voice box)</text>
+</svg>

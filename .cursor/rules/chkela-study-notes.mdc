@@ -1,0 +1,46 @@
+---
+description: How Chkela study notes are prepared and how they must look in the CMS
+alwaysApply: true
+---
+
+# Chkela study notes
+
+Use when creating/editing CMS notes (`shared/content/data.json` → sync `assets/content/data.json`).
+
+## Goal
+
+Fast, exam-ready revision. Voice: clear student coach. Notes must cover the textbook **learning competencies** for that chapter.
+
+## Competency coverage (required)
+
+1. Copy the chapter **Content / Learning competencies** from the MoE unit opener into the chapter overview (`callout exam`).
+2. Map every competency to at least one lesson note. If a competency is missing, add or expand a lesson.
+3. Lesson notes teach what students must **do** (define, state, classify, describe, list, argue).
+
+## Classification
+
+- Lessons first, then **one note per lesson** (`lessonId`).
+- **Overview + Summary only** on `Chapter overview & summary` (`order: 0`).
+- Lesson notes: that section only. No per-lesson Overview/Summary.
+
+## No-dash writing (required)
+
+Never use em dashes (`—`) or en dashes (`–`). Prefer periods, colons, or parentheses. No "Term — definition" bullets.
+
+## Engaging markup
+
+```html
+<div class="section-label">2.1</div>
+<h2>Characteristics of living things</h2>
+<p class="lead">Hook in one plain sentence.</p>
+<p>Use <span class="hl">highlights</span> and <span class="u">underlines</span> on key phrases.</p>
+<div class="key-term"><span class="kt-label">Key term</span><strong class="u">Taxonomy.</strong> Definition here.</div>
+<ul class="note-list"><li>…</li></ul>
+<div class="callout tip"><span class="callout-label">Exam tip</span><p>…</p></div>
+```
+
+Highlight: `hl`, `hl-pink`, `hl-mint`. Underline: `u`, `u-wavy`, `u-double`.
+
+Chapter overview: `note-hero`, competencies in `callout exam`, `summary-box`.
+
+Math: `$inline$` / `$$display$$`. Sync `assets/content/data.json` after edits.

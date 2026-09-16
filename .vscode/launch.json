@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chkela (iPhone)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "00008120-000505CE1E88C01E",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--dart-define=CONTENT_API_BASE=http://192.168.1.6:5173"
+      ]
+    },
+    {
+      "name": "Chkela (debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--dart-define=CONTENT_API_BASE=http://192.168.1.6:5173"
+      ]
+    }
+  ]
+}

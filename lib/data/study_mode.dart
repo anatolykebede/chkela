@@ -1,0 +1,1 @@
+enum SubjectStudyMode { notes, flashcards }

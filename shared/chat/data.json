@@ -1,0 +1,83 @@
+{
+  "conversations": {
+    "c_+251947819388__hanna-b": {
+      "id": "c_+251947819388__hanna-b",
+      "participants": [
+        "+251947819388",
+        "hanna-b"
+      ],
+      "createdAt": "2026-09-07T22:02:37.505Z",
+      "updatedAt": "2026-09-07T22:05:07.356Z",
+      "lastMessage": {
+        "id": "m_mtrsh09q_ow5xpm",
+        "text": "x",
+        "from": "+251947819388",
+        "createdAt": "2026-09-07T22:05:07.356Z"
+      },
+      "unread": {
+        "+251947819388": 0,
+        "hanna-b": 4
+      }
+    },
+    "c_+251947819388__yosef-k": {
+      "id": "c_+251947819388__yosef-k",
+      "participants": [
+        "+251947819388",
+        "yosef-k"
+      ],
+      "createdAt": "2026-09-09T15:02:31.989Z",
+      "updatedAt": "2026-09-09T15:02:38.071Z",
+      "lastMessage": {
+        "id": "m_mtu89dyv_8ou18e",
+        "text": "hey man",
+        "from": "+251947819388",
+        "createdAt": "2026-09-09T15:02:38.071Z"
+      },
+      "unread": {
+        "+251947819388": 0,
+        "yosef-k": 1
+      }
+    }
+  },
+  "messages": {
+    "c_+251947819388__hanna-b": [
+      {
+        "id": "m_mtrsdsn5_1jxdmv",
+        "conversationId": "c_+251947819388__hanna-b",
+        "from": "+251947819388",
+        "text": "Hey Hanna, real chat works!",
+        "createdAt": "2026-09-07T22:02:37.505Z"
+      },
+      {
+        "id": "m_mtrse7o8_4rvd2f",
+        "conversationId": "c_+251947819388__hanna-b",
+        "from": "+251947819388",
+        "text": "API ping",
+        "createdAt": "2026-09-07T22:02:56.984Z"
+      },
+      {
+        "id": "m_mtrsh053_v9j02a",
+        "conversationId": "c_+251947819388__hanna-b",
+        "from": "+251947819388",
+        "text": "fcm check",
+        "createdAt": "2026-09-07T22:05:07.191Z"
+      },
+      {
+        "id": "m_mtrsh09q_ow5xpm",
+        "conversationId": "c_+251947819388__hanna-b",
+        "from": "+251947819388",
+        "text": "x",
+        "createdAt": "2026-09-07T22:05:07.356Z"
+      }
+    ],
+    "c_+251947819388__yosef-k": [
+      {
+        "id": "m_mtu89dyv_8ou18e",
+        "conversationId": "c_+251947819388__yosef-k",
+        "from": "+251947819388",
+        "text": "hey man",
+        "createdAt": "2026-09-09T15:02:38.071Z"
+      }
+    ]
+  }
+}

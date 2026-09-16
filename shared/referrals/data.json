@@ -1,0 +1,31 @@
+{
+  "referrals": [
+    {
+      "id": "r_mtq2h881",
+      "code": "CHK-V96K6M",
+      "referrerPhone": "+251911223344",
+      "createdAt": "2026-09-06T17:09:41.474Z",
+      "creditDaysEarned": 0,
+      "redemptions": []
+    },
+    {
+      "id": "r_mtq2kiol",
+      "code": "CHK-8C6T2A",
+      "referrerPhone": "+251947876543",
+      "createdAt": "2026-09-06T17:12:14.998Z",
+      "creditDaysEarned": 0,
+      "redemptions": []
+    },
+    {
+      "id": "r_mtrly6t2",
+      "code": "CHK-BNUYAX",
+      "referrerPhone": "+251947819388",
+      "createdAt": "2026-09-07T19:02:31.672Z",
+      "creditDaysEarned": 0,
+      "pointsEarned": 0,
+      "purchaseCpEarned": 0,
+      "redemptions": []
+    }
+  ],
+  "pointBalances": {}
+}
